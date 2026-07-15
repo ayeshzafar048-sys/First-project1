@@ -8,7 +8,7 @@ namespace UniversitySystem
         public int Student_Id;
         public string Student_Name;
         public string Father_Name;
-        public string E_mail;
+       
         public DateTime Date_Of_Birth;
         public int Department_Id;
         public double CGPA;
