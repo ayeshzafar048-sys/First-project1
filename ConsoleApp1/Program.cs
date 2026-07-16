@@ -234,7 +234,7 @@ namespace UniversitySystem
             Console.WriteLine("\n========== Account Information ==========");
             Console.WriteLine(" student Account ID      : " + AccountID);
             Console.WriteLine("Username        : " + Username);
-            Console.WriteLine("Password        : " + PasswordHash);
+            Console.WriteLine("Password abdullah     : " + PasswordHash);
             Console.WriteLine("Account Status  : " + AccountStatus);
         }
     }
