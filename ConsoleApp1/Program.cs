@@ -220,7 +220,7 @@ namespace UniversitySystem
         public void DisplayAccount()
         {
             Console.WriteLine("\n========== Account Information ==========");
-            Console.WriteLine("Account ID      : " + AccountID);
+            Console.WriteLine(" student Account ID      : " + AccountID);
             Console.WriteLine("Username        : " + Username);
             Console.WriteLine("Password        : " + PasswordHash);
             Console.WriteLine("Account Status  : " + AccountStatus);
