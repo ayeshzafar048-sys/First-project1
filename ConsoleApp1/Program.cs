@@ -5,7 +5,7 @@ namespace UniversitySystem
     // Base Class
     class Student
     {
-        
+        public int id;
         public int name1;
         public int Student_Id;
         public string Student_Name;
