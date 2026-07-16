@@ -6,7 +6,7 @@ namespace UniversitySystem
     class Student
     {
         
-        public int name1;
+       
         public int Student_Id;
         public string Student_Name;
         public string Father_Name;
