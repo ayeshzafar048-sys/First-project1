@@ -121,7 +121,7 @@ namespace UniversitySystem
         {
             Console.WriteLine("\n========== Student Information ==========");
             Console.WriteLine("Student ID      : " + Student_Id);
-            Console.WriteLine("Student Name    : " + Student_Name);
+            Console.WriteLine("Student Full Name : " + Student_Name);
             Console.WriteLine("Father Name     : " + Father_Name);
             Console.WriteLine("Email           : " + e_mail);
             Console.WriteLine("Date of Birth   : " + Date_Of_Birth.ToShortDateString());
