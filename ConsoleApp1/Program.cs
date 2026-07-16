@@ -184,10 +184,14 @@ namespace UniversitySystem
         public string AccountStatus;
 
         // Default Constructor
+        public Account(int a,  int b)
+        {
+
+        }
         public Account()
         {
-        }
 
+        }
         // Parameterized Constructor
         public Account(int studentId, string studentName, string fatherName,
                        string email, DateTime dob, int departmentId,
@@ -234,16 +238,25 @@ namespace UniversitySystem
             Console.WriteLine("\n========== Account Information ==========");
             Console.WriteLine(" student Account ID      : " + AccountID);
             Console.WriteLine("Username        : " + Username);
-            Console.WriteLine("Password Ayesha   : " + PasswordHash);
+            Console.WriteLine("Password abdullah     : " + PasswordHash);
             Console.WriteLine("Account Status  : " + AccountStatus);
         }
     }
 
+    public static class Course
+    {
+public static void englis()
+        {
+
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
+            Course.englis();
             Account student = new Account();
+            var student1 = new Account(102,103);   
 
             student.InputStudent();
 
