@@ -184,10 +184,14 @@ namespace UniversitySystem
         public string AccountStatus;
 
         // Default Constructor
+        public Account(int a,  int b)
+        {
+
+        }
         public Account()
         {
-        }
 
+        }
         // Parameterized Constructor
         public Account(int studentId, string studentName, string fatherName,
                        string email, DateTime dob, int departmentId,
@@ -239,11 +243,20 @@ namespace UniversitySystem
         }
     }
 
+    public static class Course
+    {
+public static void englis()
+        {
+
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
+            Course.englis();
             Account student = new Account();
+            var student1 = new Account(102,103);   
 
             student.InputStudent();
 
