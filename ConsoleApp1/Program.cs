@@ -10,7 +10,7 @@ namespace UniversitySystem
         public int Student_Id;
         public string Student_Name;
         public string Father_Name;
-       
+        public string e_mail;
         public DateTime Date_Of_Birth;
         public int Department_Id;
         public double CGPA;
@@ -29,7 +29,7 @@ namespace UniversitySystem
             Student_Id = studentId;
             Student_Name = studentName;
             Father_Name = fatherName;
-            E_mail = email;
+            e_mail = email;
             Date_Of_Birth = dob;
             Department_Id = departmentId;
             CGPA = cgpa;
@@ -59,7 +59,7 @@ namespace UniversitySystem
             Father_Name = Console.ReadLine();
 
             Console.Write("Enter Email: ");
-            E_mail = Console.ReadLine();
+            e_mail = Console.ReadLine();
 
             while (true)
             {
@@ -124,11 +124,23 @@ namespace UniversitySystem
             Console.WriteLine("Student ID      : " + Student_Id);
             Console.WriteLine(" Name    : " + Student_Name);
             Console.WriteLine("Father Name     : " + Father_Name);
-            Console.WriteLine("Email           : " + E_mail);
+            Console.WriteLine("Email           : " + e_mail);
             Console.WriteLine("Date of Birth   : " + Date_Of_Birth.ToShortDateString());
             Console.WriteLine("Department ID   : " + Department_Id);
             Console.WriteLine("CGPA            : " + CGPA);
             Console.WriteLine("Fee             : " + Fee);
+            Console.WriteLine("Age             : " + CalculateAge());
+        }
+        public int CalculateAge()
+        {
+            int age = DateTime.Now.Year - Date_Of_Birth.Year;
+
+            if (DateTime.Now.DayOfYear < Date_Of_Birth.DayOfYear)
+            {
+                age--;
+            }
+
+            return age;
         }
 
         public void CalculateGrade()
